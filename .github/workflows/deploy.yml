@@ -1,0 +1,29 @@
+name: Deploy to Onamae Server
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
+
+    - name: 🚀 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: www1131.onamae.ne.jp
+        username: richwin@sou-works.co.jp
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: /sou-works.co.jp/wp-content/themes/sou/
+        # デプロイから除外するファイル・フォルダの指定
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          .github/**
+          README.md
