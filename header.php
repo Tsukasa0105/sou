@@ -6,7 +6,7 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
+<?php if ( function_exists( 'wp_body_open' ) ) { wp_body_open(); } ?>
 <header>
   <div class="header-inner">
     <a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">株式会社SOUワークス<span>SOU WORKS CO., LTD.</span></a>

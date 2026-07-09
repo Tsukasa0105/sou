@@ -35,18 +35,22 @@ function souworks_enqueue_assets() {
 		null
 	);
 
+	$css_path = get_template_directory() . '/assets/css/style.css';
+	$css_ver  = file_exists( $css_path ) ? filemtime( $css_path ) : '1.0.0';
 	wp_enqueue_style(
 		'souworks-style',
 		get_template_directory_uri() . '/assets/css/style.css',
 		array(),
-		filemtime( get_template_directory() . '/assets/css/style.css' )
+		$css_ver
 	);
 
+	$js_path = get_template_directory() . '/assets/js/main.js';
+	$js_ver  = file_exists( $js_path ) ? filemtime( $js_path ) : '1.0.0';
 	wp_enqueue_script(
 		'souworks-main',
 		get_template_directory_uri() . '/assets/js/main.js',
 		array(),
-		filemtime( get_template_directory() . '/assets/js/main.js' ),
+		$js_ver,
 		true
 	);
 }
