@@ -26,8 +26,14 @@ nav a::after { content: ""; position: absolute; left: 50%; bottom: 4px; transfor
 nav a.active, nav a:hover { color: var(--navy-deep); }
 nav a.active::after, nav a:hover::after { width: 60%; }
 main { min-height: 70vh; }
-.page { display: none; }
-.page.active { display: block; animation: fadeIn .45s ease; }
+/*
+ * Scope the page-panel visibility rules to the theme content area.
+ * WordPress adds a `page` class to <body> on every static page; using the
+ * unqualified `.page` selector here therefore hid the entire document on
+ * the Business and Company pages.
+ */
+main > .page { display: none; }
+main > .page.active { display: block; animation: fadeIn .45s ease; }
 @keyframes fadeIn { from { opacity:0; transform: translateY(8px); } to { opacity:1; transform: translateY(0); } }
 .hero { position: relative; overflow: hidden; background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 58%, var(--navy-soft) 100%); color: var(--paper); padding: 130px 40px 120px; text-align: center; }
 .hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 15% 25%, rgba(219,197,140,.09), transparent 38%), radial-gradient(circle at 82% 70%, rgba(219,197,140,.07), transparent 35%); }
