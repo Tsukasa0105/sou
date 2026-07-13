@@ -88,7 +88,7 @@ main > .page.active { display: block; animation: fadeIn .45s ease; }
 .component-item::before { content: ""; position: absolute; left: 10px; top: 24px; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
 .graph-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
 .graph-card { background: #fff; border: 1px solid var(--line); overflow: hidden; box-shadow: 0 10px 24px rgba(11,29,58,.05); }
-.graph-card img { aspect-ratio: 4 / 3; object-fit: cover; width: 100%; background: #fff; }
+.graph-card img { aspect-ratio: 4 / 3; object-fit: contain; width: 100%; background: #fff; }
 .graph-caption { padding: 16px 18px 18px; border-top: 1px solid var(--line); }
 .graph-caption strong { display: block; color: var(--navy-deep); font-size: 14px; margin-bottom: 6px; letter-spacing: .05em; }
 .graph-caption span { color: var(--muted); font-size: 12px; line-height: 1.8; white-space: pre-line; }
