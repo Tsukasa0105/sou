@@ -9,6 +9,11 @@
   <div class="copy">© SOU WORKS CO., LTD. ALL RIGHTS RESERVED.</div>
 </footer>
 
+<div class="lightbox" id="lightbox">
+  <button type="button" class="lightbox-close" aria-label="閉じる">&times;</button>
+  <img src="" alt="">
+</div>
+
 <?php wp_footer(); ?>
 </body>
 </html>

@@ -88,7 +88,7 @@ main > .page.active { display: block; animation: fadeIn .45s ease; }
 .component-item::before { content: ""; position: absolute; left: 10px; top: 24px; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
 .graph-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
 .graph-card { background: #fff; border: 1px solid var(--line); overflow: hidden; box-shadow: 0 10px 24px rgba(11,29,58,.05); }
-.graph-card img { aspect-ratio: 4 / 3; object-fit: contain; width: 100%; background: #fff; }
+.graph-card img { aspect-ratio: 4 / 3; object-fit: contain; width: 100%; background: #fff; cursor: zoom-in; }
 .graph-caption { padding: 16px 18px 18px; border-top: 1px solid var(--line); }
 .graph-caption strong { display: block; color: var(--navy-deep); font-size: 14px; margin-bottom: 6px; letter-spacing: .05em; }
 .graph-caption span { color: var(--muted); font-size: 12px; line-height: 1.8; white-space: pre-line; }
@@ -109,6 +109,19 @@ footer::before { content: ""; position: absolute; top: 0; left: 0; right: 0; hei
 footer p { font-size: 13px; opacity: .86; letter-spacing: .06em; line-height: 2; }
 .footer-line { width: 42px; height: 1px; background: var(--gold); margin: 26px auto; }
 .copy { font-family: "Cormorant Garamond", serif; font-size: 11px; letter-spacing: .3em; opacity: .55; }
+
+/* ==========================================================================
+   Lightbox (click-to-enlarge popup for .graph-card images)
+   ========================================================================== */
+.lightbox { position: fixed; inset: 0; z-index: 1000; display: none; align-items: center; justify-content: center; padding: 40px; background: rgba(11, 29, 58, 0.92); cursor: zoom-out; }
+.lightbox.is-active { display: flex; }
+.lightbox img { max-width: 100%; max-height: 100%; background: #fff; box-shadow: 0 24px 60px rgba(0, 0, 0, .4); cursor: default; }
+.lightbox-close { position: absolute; top: 24px; right: 28px; width: 42px; height: 42px; border: 1px solid rgba(255, 255, 255, .5); border-radius: 50%; background: transparent; color: var(--paper); font-size: 22px; line-height: 1; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: background .2s ease; }
+.lightbox-close:hover { background: rgba(255, 255, 255, .14); }
+@media (max-width: 600px) {
+  .lightbox { padding: 20px; }
+  .lightbox-close { top: 14px; right: 14px; width: 36px; height: 36px; font-size: 18px; }
+}
 
 /* ==========================================================================
    Responsive: tablet (unchanged from the original CodePen mockup)
