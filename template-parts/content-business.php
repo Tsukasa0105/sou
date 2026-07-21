@@ -59,7 +59,7 @@
         </figure>
         <figure class="graph-card">
           <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/functional-components.png' ); ?>" alt="機能性成分グラフ">
-          <figcaption class="graph-caption"><strong>機能性成分</strong><span>水溶性食物繊維、遊離アミノ酸、ポリフェノール類、クエン酸、ビタミン類などの構成を示しています。</span></figcaption>
+          <figcaption class="graph-caption"><strong>機能性成分</strong><span>水溶性食物繊維、遊離アミノ酸、ポリフェノール類、クエン酸などの構成を示しています。</span></figcaption>
         </figure>
         <figure class="graph-card">
           <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/amino-acid-breakdown.png' ); ?>" alt="遊離アミノ酸の内訳グラフ">
