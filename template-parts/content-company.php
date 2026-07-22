@@ -13,6 +13,7 @@
 
     <table class="company-table">
       <tr><th>会社名</th><td>株式会社SOUワークス（SOU Works, Co. Ltd.）</td></tr>
+      <tr><th>代表者</th><td>代表取締役　松浦寛次郎</td></tr>
       <tr><th>所在地</th><td>〒750-0065<br>山口県下関市伊崎町二丁目13-34</td></tr>
       <tr><th>電話／ファックス</th><td><a href="tel:083-223-6472">083-223-6472</a></td></tr>
       <tr><th>メールアドレス</th><td><a href="mailto:k.matsuura@sou-works.co.jp">k.matsuura@sou-works.co.jp</a></td></tr>
