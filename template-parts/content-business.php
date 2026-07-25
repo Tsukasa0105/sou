@@ -14,7 +14,7 @@
     <section class="block">
       <span class="block-label">— Low Temperature Drying</span>
       <h3>低温乾燥技術</h3>
-      <p class="block-intro">この技術により機能性成分を保持した製品粉末を水産養殖向け給餌試験に展開し、ストレスの低減などを通じて養殖効率の向上を目指しています。機能性成分の高い原料素材として、健康食品向け事業展開も行っています。</p>
+      <p class="block-intro">この技術により機能性成分を保持した製品粉末を水産養殖向け給餌試験に展開し、摂餌の誘因刺激や、腸活による免疫力向上、ストレスの低減などを通じて養殖効率の向上を目指しています。機能性成分の高い原料素材として、健康食品向け事業展開も行っています。</p>
       <div class="two-col">
         <div>
           <table class="spec-table">
@@ -55,7 +55,7 @@
       <div class="graph-grid">
         <figure class="graph-card">
           <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nutrition-composition.png' ); ?>" alt="一般栄養成分グラフ">
-          <figcaption class="graph-caption"><strong>一般栄養成分</strong><span>麦焼酎蒸留粕・おから低温乾燥品に含まれる一般栄養成分の掲載枠です。</span></figcaption>
+          <figcaption class="graph-caption"><strong>一般栄養成分</strong><span>麦焼酎蒸留粕・おから低温乾燥品に含まれる一般栄養成分の一例です。</span></figcaption>
         </figure>
         <figure class="graph-card">
           <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/functional-components.png' ); ?>" alt="機能性成分グラフ">
@@ -67,7 +67,7 @@
         </figure>
         <figure class="graph-card">
           <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/comparison-chart.png' ); ?>" alt="比較食品グラフ">
-          <figcaption class="graph-caption"><strong>比較食品グラフ</strong><span>麦焼酎粕・おから低温乾燥品に含まれる機能性成分を、参考食品と比較したグラフです。</span></figcaption>
+          <figcaption class="graph-caption"><strong>比較食品グラフ</strong><span>麦焼酎粕・おから低温乾燥品に含まれる機能性成分を、一般食品群と比較したグラフです。</span></figcaption>
         </figure>
       </div>
     </section>
@@ -88,7 +88,7 @@
         </div>
         <figure class="graph-card">
           <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/flounder-farming-trial.png' ); ?>" alt="ヒラメ養殖試験結果">
-          <figcaption class="graph-caption"><strong>ヒラメ養殖試験結果</strong><span>MPIによるヒラメの陸上養殖給餌試験の推移イメージです。焼酎粕・おからハイブリッド粉混合率7.5%の条件での試験概要を示しています。</span></figcaption>
+          <figcaption class="graph-caption"><strong>ヒラメ養殖試験結果</strong><span>MP(モイストペレット)によるヒラメの陸上養殖給餌試験の推移イメージです。焼酎粕・おからハイブリッド粉混合率7.5%の条件での試験概要を示しています。</span></figcaption>
         </figure>
       </div>
     </section>
